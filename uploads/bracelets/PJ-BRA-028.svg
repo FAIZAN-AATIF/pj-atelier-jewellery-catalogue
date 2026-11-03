@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FCFAF5"/><stop offset="1" stop-color="#E9E0D0"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF1BD"/><stop offset=".38" stop-color="#D4AF37"/><stop offset=".72" stop-color="#8B6229"/><stop offset="1" stop-color="#F3D68A"/></linearGradient>
+<radialGradient id="gem" cx=".3" cy=".22"><stop stop-color="#fff"/><stop offset=".3" stop-color="#6C8FAE"/><stop offset="1" stop-color="#253247"/></radialGradient>
+<filter id="shadow"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<rect width="600" height="600" rx="28" fill="url(#bg)"/><circle cx="196" cy="430" r="3" fill="#D4AF37" opacity=".3"/><circle cx="399" cy="270" r="5" fill="#D4AF37" opacity=".3"/><circle cx="475" cy="165" r="5" fill="#D4AF37" opacity=".3"/><circle cx="420" cy="455" r="2" fill="#D4AF37" opacity=".3"/><circle cx="210" cy="275" r="5" fill="#D4AF37" opacity=".3"/><circle cx="72" cy="300" r="2" fill="#D4AF37" opacity=".3"/><circle cx="100" cy="195" r="3" fill="#D4AF37" opacity=".3"/><circle cx="336" cy="420" r="4" fill="#D4AF37" opacity=".3"/><circle cx="189" cy="115" r="3" fill="#D4AF37" opacity=".3"/><circle cx="307" cy="430" r="2" fill="#D4AF37" opacity=".3"/>
+<ellipse cx="300" cy="470" rx="170" ry="20" fill="#655239" opacity=".15" filter="url(#shadow)"/>
+<g transform="rotate(2 300 300)"><ellipse cx="300" cy="315" rx="150" ry="88" fill="none" stroke="url(#metal)" stroke-width="19"/><ellipse cx="300" cy="315" rx="137" ry="75" fill="none" stroke="#fff0c0" stroke-width="3"/><path d="M 306 282 L 332 308 L 306 334 L 280 308 Z" fill="url(#gem)" stroke="#fff" stroke-width="3"/><circle cx="178.7" cy="366.8" r="8" fill="#A9782D"/><circle cx="155.4" cy="291.7" r="8" fill="#A9782D"/><circle cx="240.9" cy="234.1" r="8" fill="#A9782D"/><circle cx="371.0" cy="237.5" r="8" fill="#A9782D"/><circle cx="447.6" cy="299.2" r="8" fill="#A9782D"/><circle cx="413.0" cy="372.8" r="8" fill="#A9782D"/><circle cx="293.4" cy="402.9" r="8" fill="#A9782D"/></g>
+<path d="M 45 48 H 555" stroke="#D4AF37" opacity=".3"/>
+<text x="300" y="535" text-anchor="middle" font-family="Georgia,serif" font-size="18" letter-spacing="4" fill="#725B36">PJ ATELIER</text>
+<text x="300" y="565" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#8A7B62">PJ-BRA-028</text>
+</svg>

@@ -1,0 +1,29 @@
+
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+
+# Local database backups
+/backups/
+/pj_catalogue_backup_*.db
+/test_pj_catalogue.db
+
+# Original image-generation/source folders
+/*_photos/

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FCFAF5"/><stop offset="1" stop-color="#E9E0D0"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF1BD"/><stop offset=".38" stop-color="#D4AF37"/><stop offset=".72" stop-color="#8B6229"/><stop offset="1" stop-color="#F3D68A"/></linearGradient>
+<radialGradient id="gem" cx=".3" cy=".22"><stop stop-color="#fff"/><stop offset=".3" stop-color="#6C8FAE"/><stop offset="1" stop-color="#253247"/></radialGradient>
+<filter id="shadow"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<rect width="600" height="600" rx="28" fill="url(#bg)"/><circle cx="179" cy="115" r="2" fill="#D4AF37" opacity=".3"/><circle cx="329" cy="200" r="3" fill="#D4AF37" opacity=".3"/><circle cx="296" cy="150" r="2" fill="#D4AF37" opacity=".3"/><circle cx="354" cy="275" r="5" fill="#D4AF37" opacity=".3"/><circle cx="261" cy="400" r="5" fill="#D4AF37" opacity=".3"/><circle cx="84" cy="355" r="3" fill="#D4AF37" opacity=".3"/><circle cx="119" cy="85" r="3" fill="#D4AF37" opacity=".3"/><circle cx="238" cy="345" r="5" fill="#D4AF37" opacity=".3"/><circle cx="426" cy="225" r="3" fill="#D4AF37" opacity=".3"/><circle cx="429" cy="235" r="4" fill="#D4AF37" opacity=".3"/>
+<ellipse cx="300" cy="470" rx="170" ry="20" fill="#655239" opacity=".15" filter="url(#shadow)"/>
+<g transform="rotate(-9 300 300)"><path d="M 205 175 C 145 235 160 380 230 410 C 300 440 315 320 260 255 M 395 175 C 455 235 440 380 370 410 C 300 440 285 320 340 255" fill="none" stroke="url(#metal)" stroke-width="17"/><circle cx="230" cy="420" r="33" fill="url(#gem)"/><circle cx="370" cy="420" r="33" fill="url(#gem)"/></g>
+<path d="M 45 48 H 555" stroke="#D4AF37" opacity=".3"/>
+<text x="300" y="535" text-anchor="middle" font-family="Georgia,serif" font-size="18" letter-spacing="4" fill="#725B36">PJ ATELIER</text>
+<text x="300" y="565" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#8A7B62">PJ-EAR-050</text>
+</svg>
