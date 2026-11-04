@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FCFAF5"/><stop offset="1" stop-color="#E9E0D0"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF1BD"/><stop offset=".38" stop-color="#C69A45"/><stop offset=".72" stop-color="#8B6229"/><stop offset="1" stop-color="#F3D68A"/></linearGradient>
+<radialGradient id="gem" cx=".3" cy=".22"><stop stop-color="#fff"/><stop offset=".3" stop-color="#9B4D62"/><stop offset="1" stop-color="#253247"/></radialGradient>
+<filter id="shadow"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<rect width="600" height="600" rx="28" fill="url(#bg)"/><circle cx="107" cy="325" r="3" fill="#C69A45" opacity=".3"/><circle cx="520" cy="265" r="2" fill="#C69A45" opacity=".3"/><circle cx="203" cy="345" r="5" fill="#C69A45" opacity=".3"/><circle cx="373" cy="280" r="4" fill="#C69A45" opacity=".3"/><circle cx="492" cy="145" r="2" fill="#C69A45" opacity=".3"/><circle cx="130" cy="410" r="5" fill="#C69A45" opacity=".3"/><circle cx="125" cy="180" r="2" fill="#C69A45" opacity=".3"/><circle cx="501" cy="325" r="4" fill="#C69A45" opacity=".3"/><circle cx="441" cy="90" r="2" fill="#C69A45" opacity=".3"/><circle cx="522" cy="400" r="3" fill="#C69A45" opacity=".3"/>
+<ellipse cx="300" cy="470" rx="170" ry="20" fill="#655239" opacity=".15" filter="url(#shadow)"/>
+<g transform="rotate(-5 300 300)"><path d="M 300 115 L 300 205" stroke="url(#metal)" stroke-width="10"/><path d="M 300 205 C 220 260 220 370 300 425 C 380 370 380 260 300 205 Z" fill="none" stroke="url(#metal)" stroke-width="17"/><path d="M 299 264 L 328 293 L 299 322 L 270 293 Z" fill="url(#gem)" stroke="#fff" stroke-width="3"/></g>
+<path d="M 45 48 H 555" stroke="#C69A45" opacity=".3"/>
+<text x="300" y="535" text-anchor="middle" font-family="Georgia,serif" font-size="18" letter-spacing="4" fill="#725B36">PJ ATELIER</text>
+<text x="300" y="565" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#8A7B62">PJ-PEN-071</text>
+</svg>

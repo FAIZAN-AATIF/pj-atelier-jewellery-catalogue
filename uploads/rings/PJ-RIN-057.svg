@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FCFAF5"/><stop offset="1" stop-color="#E9E0D0"/></linearGradient>
+<linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFF1BD"/><stop offset=".38" stop-color="#D4AF37"/><stop offset=".72" stop-color="#8B6229"/><stop offset="1" stop-color="#F3D68A"/></linearGradient>
+<radialGradient id="gem" cx=".3" cy=".22"><stop stop-color="#fff"/><stop offset=".3" stop-color="#B8A0C8"/><stop offset="1" stop-color="#253247"/></radialGradient>
+<filter id="shadow"><feGaussianBlur stdDeviation="10"/></filter>
+</defs>
+<rect width="600" height="600" rx="28" fill="url(#bg)"/><circle cx="279" cy="440" r="3" fill="#D4AF37" opacity=".3"/><circle cx="415" cy="120" r="3" fill="#D4AF37" opacity=".3"/><circle cx="214" cy="125" r="2" fill="#D4AF37" opacity=".3"/><circle cx="226" cy="425" r="4" fill="#D4AF37" opacity=".3"/><circle cx="163" cy="320" r="3" fill="#D4AF37" opacity=".3"/><circle cx="270" cy="140" r="4" fill="#D4AF37" opacity=".3"/><circle cx="200" cy="135" r="5" fill="#D4AF37" opacity=".3"/><circle cx="384" cy="140" r="4" fill="#D4AF37" opacity=".3"/><circle cx="133" cy="395" r="2" fill="#D4AF37" opacity=".3"/><circle cx="93" cy="130" r="2" fill="#D4AF37" opacity=".3"/>
+<ellipse cx="300" cy="470" rx="170" ry="20" fill="#655239" opacity=".15" filter="url(#shadow)"/>
+<g transform="rotate(-11 300 300)"><ellipse cx="300" cy="330" rx="122" ry="84" fill="none" stroke="url(#metal)" stroke-width="19"/><path d="M 300 250 L 300 225" stroke="url(#metal)" stroke-width="12"/><path d="M 291 272 L 314 295 L 291 318 L 268 295 Z" fill="url(#gem)" stroke="#fff" stroke-width="3"/></g>
+<path d="M 45 48 H 555" stroke="#D4AF37" opacity=".3"/>
+<text x="300" y="535" text-anchor="middle" font-family="Georgia,serif" font-size="18" letter-spacing="4" fill="#725B36">PJ ATELIER</text>
+<text x="300" y="565" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" letter-spacing="2" fill="#8A7B62">PJ-RIN-057</text>
+</svg>
