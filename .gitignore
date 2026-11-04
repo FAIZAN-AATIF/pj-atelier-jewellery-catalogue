@@ -1,0 +1,38 @@
+# Python virtual environments
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+
+# Local databases and backups
+*.db
+*.sqlite
+*.sqlite3
+/backups/
+
+# Local uploaded files
+/uploads/*
+!/uploads/.gitkeep
+
+# Test files
+test_storage.py
+test_supabase.py
+test_upload.py
+
+# Original image-generation/source folders
+/*_photos/

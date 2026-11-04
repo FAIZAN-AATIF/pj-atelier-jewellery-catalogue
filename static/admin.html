@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PJ — Catalogue Studio</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="admin-body">
+<header class="site-header admin-header">
+  <a class="brand" href="/">
+    <span class="brand-mark">PJ</span>
+    <span>ATELIER <b>PJ</b><small>CATALOGUE STUDIO</small></span>
+  </a>
+  <a href="/" class="back-link">← View storefront</a>
+</header>
+<main class="admin-main">
+  <section id="login-panel" class="login-card">
+    <p class="eyebrow">PRIVATE WORKSPACE</p>
+    <h1>Welcome back.</h1>
+    <p class="muted">Sign in to curate your collection.</p>
+    <form id="login-form">
+      <label>Username<input name="username" value="admin" autocomplete="username" required></label>
+      <label>Password<input name="password" type="password" autocomplete="current-password" required></label>
+      <button class="button button-dark full" type="submit">Sign in <span>↗</span></button>
+      <p class="form-note">Use the credentials configured in your local .env file.</p>
+      <p id="login-error" class="error"></p>
+    </form>
+  </section>
+  <section id="dashboard" class="hidden">
+    <div class="admin-shell">
+      <aside class="admin-sidebar">
+        <a class="sidebar-brand" href="/">
+          <span class="sidebar-mark">PJ</span>
+          <span><b>PJ ATELIER</b><small>JEWELLERY CATALOGUE</small></span>
+        </a>
+        <p class="sidebar-label">WORKSPACE</p>
+        <nav class="sidebar-nav">
+          <a class="active" href="#overview"><span>▦</span> Dashboard</a>
+          <a href="#catalogue"><span>◇</span> All products</a>
+          <a href="#product-editor"><span>＋</span> Add a design</a>
+          <a href="#category-manager"><span>▤</span> Categories</a>
+          <a href="/" target="_blank"><span>↗</span> View storefront</a>
+        </nav>
+        <div class="sidebar-bottom"><span class="sidebar-dot"></span><span>Catalogue workspace</span></div>
+      </aside>
+      <div class="admin-workspace">
+        <div class="dashboard-heading" id="overview">
+          <div><p class="eyebrow">YOUR PRIVATE WORKSPACE</p><h1>Catalogue studio<span class="gold-dot">.</span></h1><p class="muted">Every detail, thoughtfully in place.</p></div>
+          <button id="logout" class="button button-light">Sign out</button>
+        </div>
+        <div id="stats" class="stats-grid"></div>
+        <div class="admin-layout">
+          <section class="editor-card" id="product-editor">
+            <div class="editor-head"><div><p class="eyebrow">PRODUCT EDITOR</p><h2 id="editor-title">Add a design</h2></div><span class="status-pill">DRAFT / LIVE</span></div>
+            <form id="product-form">
+              <input type="hidden" name="id">
+              <input type="hidden" name="image_path">
+              <div class="upload-zone" id="upload-zone">
+                <input type="file" id="image-file" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
+                <div id="image-preview" class="image-preview"><span class="upload-icon">＋</span><b>Drop a jewellery image here</b><small>or click to browse · JPG, PNG, WEBP · up to 8 MB</small></div>
+                <button type="button" id="ai-button" class="button button-light ai-button" disabled>✳ Generate with AI</button>
+              </div>
+              <p id="ai-message" class="form-note"></p>
+              <div class="form-grid">
+                <label>Product name *<input name="title" required maxlength="160" placeholder="e.g. Solstice sculpted ring"></label>
+                <label>Product code / SKU *<input name="sku" required maxlength="40" placeholder="PJ-RG-001"></label>
+                <label>Category<select name="category_id" id="admin-category"><option value="">Uncategorised</option></select></label>
+                <label>Publication status<select name="status"><option value="draft">Save as draft</option><option value="published">Published — visible to customers</option></select></label>
+                <label class="wide">Description<textarea name="description" rows="4" placeholder="Describe the design and its details…"></textarea></label>
+                <label class="wide">Design tags<input name="tags" placeholder="minimal, sculptural, everyday (comma separated)"></label>
+              </div>
+              <div class="editor-actions">
+                <button type="button" id="reset-form" class="button button-light">Clear form</button>
+                <button type="submit" class="button button-dark">Save product <span>↗</span></button>
+              </div>
+              <p id="save-message" class="form-note"></p>
+            </form>
+            <div class="category-manager" id="category-manager">
+              <div class="editor-head"><div><p class="eyebrow">ORGANISE</p><h2>Categories</h2></div></div>
+              <form id="category-form" class="category-form">
+                <input name="name" placeholder="New category name" maxlength="80" required>
+                <input name="description" placeholder="Short description" maxlength="300">
+                <button class="button button-light" type="submit">Add category +</button>
+              </form>
+              <p id="category-message" class="form-note"></p>
+            </div>
+          </section>
+          <section class="products-panel" id="catalogue">
+            <div class="editor-head"><div><p class="eyebrow">CATALOGUE</p><h2>All designs</h2></div><button id="refresh" class="icon-button" title="Refresh">↻</button></div>
+            <div id="admin-products" class="admin-products"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="/static/admin.js"></script>
+</body>
+</html>
